@@ -17,9 +17,16 @@ html {
 @media(min-width:767px) {
     .navbar {
         padding: 20px 0;
+        opacity: 0.85;
+        filter: alpha(opacity=85);
+        background: #000;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .navbar:hover {
+        opacity: 1.0;
     }
 
     .top-nav-collapse {
@@ -28,7 +35,7 @@ html {
 }
 
 .pro {
-	max-width: 30%;
+	max-width: 35%;
 	height: auto;
 	display: block;
 	margin: auto;
@@ -36,11 +43,6 @@ html {
 
 .table {
 	padding-right: 40px;
-}
-
-.header {
-	color: #01BAEF;
-	font-family: Montserrat;
 }
 
 #social ul{ 
@@ -55,7 +57,7 @@ html {
 }
 
 .icon {
-    max-width: 80px;
+    max-width: 70px;
     height: auto;
 }
 
@@ -68,30 +70,40 @@ html {
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
 of those sections to manage the look and feel of the site. */
 
+.header {
+	color: #01BAEF;
+	font-family: Montserrat;
+}
+
+.section-header {
+    color: #FF3B72;
+	font-family: Montserrat;
+}
+
 .intro-section {
-    height: 80%;
+    height: 90%;
     padding-top: 150px;
     text-align: center;
     background-image: url("stars.png");
 }
 
 .about-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
-    background: #eee;
-}
-
-.projects-section {
-    height: 100%;
-    padding-top: 150px;
+    height: 50%;
+    padding-top: 2%;
     text-align: center;
     background: #fff;
 }
 
-.contact-section {
-    height: 100%;
-    padding-top: 150px;
+.projects-section {
+    height: 50%;
+    padding-top: 2%;
     text-align: center;
     background: #eee;
+}
+
+.contact-section {
+    height: 50%;
+    padding-top: 2%;
+    text-align: center;
+    background: #fff;
 }
