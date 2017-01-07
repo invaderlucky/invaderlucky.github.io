@@ -76,7 +76,8 @@ of those sections to manage the look and feel of the site. */
 }
 
 .section-header {
-    color: #FF3B72;
+    /* color: #FF3B72; */
+    color: #BD35EA;
 	font-family: Montserrat;
 }
 
