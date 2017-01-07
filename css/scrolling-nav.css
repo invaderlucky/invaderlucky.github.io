@@ -57,7 +57,7 @@ html {
 }
 
 .icon {
-    max-width: 70px;
+    max-width: 7%;
     height: auto;
 }
 
@@ -77,7 +77,7 @@ of those sections to manage the look and feel of the site. */
 
 .section-header {
     /* color: #FF3B72; */
-    color: #BD35EA;
+    color: #A02DC6;
 	font-family: Montserrat;
 }
 
