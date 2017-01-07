@@ -34,9 +34,34 @@ html {
 	margin: auto;
 }
 
+.table {
+	padding-right: 40px;
+}
+
 .header {
 	color: #01BAEF;
 	font-family: Montserrat;
+}
+
+#social ul{ 
+    list-style: none;
+    
+}
+
+#social li {
+    display: inline;
+    padding: 5px;
+    margin: auto;
+}
+
+.icon {
+    max-width: 80px;
+    height: auto;
+}
+
+.icon:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
 }
 
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
@@ -47,7 +72,7 @@ of those sections to manage the look and feel of the site. */
     height: 80%;
     padding-top: 150px;
     text-align: center;
-    background: #fff;
+    background-image: url("stars.png");
 }
 
 .about-section {
