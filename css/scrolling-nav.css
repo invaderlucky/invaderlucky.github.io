@@ -14,6 +14,35 @@ html {
     height: 100%;
 }
 
+p {
+    font-family: "Source Sans Pro";
+    font-size: 20px;
+    color: #565656;
+}
+
+/* Container for images and text to be side by side*/
+.float-my-children > * {
+    float: left;
+    margin-right: 5%;
+}
+
+/* this is called a clearfix. it makes sure that the container's children floats are cleared, without using extra markup */
+.clearfix {
+    *zoom:1 /* for IE */
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* end clearfix*/
+
 @media(min-width:767px) {
     .navbar {
         padding: 20px 0;
@@ -47,7 +76,6 @@ html {
 
 #social ul{ 
     list-style: none;
-    
 }
 
 #social li {
@@ -76,9 +104,13 @@ of those sections to manage the look and feel of the site. */
 }
 
 .section-header {
-    /* color: #FF3B72; */
-    color: #A02DC6;
+    color: #FF3B72;
 	font-family: Montserrat;
+    padding-bottom: 10px;
+}
+
+.subtitle {
+    color: #01BAEF;
 }
 
 .intro-section {
@@ -90,21 +122,31 @@ of those sections to manage the look and feel of the site. */
 
 .about-section {
     height: 50%;
-    padding-top: 2%;
+    padding-top: 1%;
     text-align: center;
     background: #fff;
 }
 
 .projects-section {
     height: 50%;
-    padding-top: 2%;
-    text-align: center;
+    padding-top: 1%;
+    text-align: left;
     background: #eee;
 }
 
-.contact-section {
+.project-header:link {
+    font-size: 3em;
+    font-family: Merriweather;
+    color: #4DCCB0;
+}
+
+.project-header:hover {
+    color: #227764;
+}
+
+.portfolio-section {
     height: 50%;
-    padding-top: 2%;
+    padding-top: 1%;
     text-align: center;
     background: #fff;
 }
