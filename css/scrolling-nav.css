@@ -206,6 +206,7 @@ of those sections to manage the look and feel of the site. */
     font-family: "Source Sans Pro";
     font-size: 175%;
     max-width: 300px;
+    max-height: 350px;
     color: #fff;
     
     text-shadow: 2px 2px 0px #000;
