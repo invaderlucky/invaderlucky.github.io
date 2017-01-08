@@ -7,6 +7,7 @@
 body {
     width: 100%;
     height: 100%;
+    overflow-x: auto;
 }
 
 html {
@@ -16,7 +17,7 @@ html {
 
 p {
     font-family: "Source Sans Pro";
-    font-size: 1em;
+    font-size: 1.3em;
     color: #565656;
 }
 
@@ -49,9 +50,16 @@ p {
         opacity: 0.85;
         filter: alpha(opacity=85);
         background: #000;
+        font-family: Montserrat;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .navbar li {
+        line-height: 40px;
+        height: 40px;
+        border:none;
     }
 
     .navbar:hover {
@@ -61,6 +69,22 @@ p {
     .top-nav-collapse {
         padding: 0;
     }
+}
+
+#home-btn:hover {
+    background-color: #0B132B;
+}
+
+#about-btn:hover {
+    background-color: #0B132B;
+}
+
+#portfolio-btn:hover {
+    background-color: #0B132B;
+}
+
+#projects-btn:hover {
+    background-color: #0B132B;
 }
 
 .pro {
@@ -127,26 +151,28 @@ of those sections to manage the look and feel of the site. */
     background: #fff;
 }
 
-.projects-section {
-    height: 50%;
-    padding-top: 1%;
-    text-align: left;
-    background: #eee;
-}
-
-.project-header:link {
-    font-size: 3em;
-    font-family: Merriweather;
-    color: #4DCCB0;
-}
-
-.project-header:hover {
-    color: #227764;
-}
-
 .portfolio-section {
     height: 50%;
     padding-top: 1%;
     text-align: center;
+    background: #eee;
+}
+
+.projects-section {
+    height: 50%;
+    padding-top: 1%;
+    text-align: left;
     background: #fff;
+}
+
+.project-title {
+    color: #4DCCB0;
+    font-size: 1.5em;
+    font-family: Montserrat;
+    text-decoration: none;
+}
+
+.project-title:hover {
+    color: #227764;
+    text-decoration: none;
 }
