@@ -7,7 +7,7 @@
 body {
     width: 100%;
     height: 100%;
-    overflow-x: auto;
+    font-size: 100%;
 }
 
 html {
@@ -17,7 +17,7 @@ html {
 
 p {
     font-family: "Source Sans Pro";
-    font-size: 1.3em;
+    font-size: 175%;
     color: #565656;
 }
 
@@ -44,6 +44,8 @@ p {
 
 /* end clearfix*/
 
+/* Navigation Bar Stuff */
+
 @media(min-width:767px) {
     .navbar {
         padding: 20px 0;
@@ -60,6 +62,7 @@ p {
         line-height: 40px;
         height: 40px;
         border:none;
+        font-size: 165%;
     }
 
     .navbar:hover {
@@ -70,6 +73,8 @@ p {
         padding: 0;
     }
 }
+
+/* Individual Navigation Buttons */
 
 #home-btn:hover {
     background-color: #0B132B;
@@ -87,12 +92,17 @@ p {
     background-color: #0B132B;
 }
 
+/* Profile Picture */
+
 .pro {
-	max-width: 35%;
+	width: 35%;
+    min-width: 300px;
 	height: auto;
 	display: block;
 	margin: auto;
 }
+
+/* Social Icons Stuff */
 
 .table {
 	padding-right: 40px;
@@ -109,7 +119,8 @@ p {
 }
 
 .icon {
-    max-width: 7%;
+    width: 7%;
+    min-width: 50px;
     height: auto;
 }
 
@@ -121,6 +132,8 @@ p {
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
 of those sections to manage the look and feel of the site. */
+
+/* Intro Section Stuff */
 
 .header {
 	color: #01BAEF;
@@ -144,22 +157,43 @@ of those sections to manage the look and feel of the site. */
     background-image: url("stars.png");
 }
 
+/* About Section Stuff */
+
 .about-section {
     height: 50%;
-    padding-top: 1%;
+    padding-top: 2%;
     text-align: center;
     background: #fff;
 }
 
+/* Portfolio Section Stuff */
+
 .portfolio-section {
     height: 80%;
-    padding-top: 1%;
+    padding-top: 2%;
     text-align: center;
     background: #eee;
 }
 
+#gallery ul{ 
+    list-style: none;
+    display: inline;
+}
+
+#gallery li {
+    display: inline;
+    list-style: none;
+}
+
 .port-container {
     position: relative;
+	display: inline;
+	margin: auto;
+}
+
+.port-image {
+    min-width: 300px;
+    padding: 5px;
 }
 
 .center {
@@ -167,37 +201,47 @@ of those sections to manage the look and feel of the site. */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1vw;
+    font-family: "Source Sans Pro";
+    font-size: 175%;
+    max-width: 300px;
     color: #fff;
-
+    
+    text-shadow: 2px 2px 0px #000;
     visibility: hidden;
 }
 
-.center:hover {
-    color: #01BAEF;
+.center-link {
+    text-decoration: none;
+    color: #4DCCB0;
+    font-size: 185%;
+}
+
+.center-link:hover {
+    color: #227764;
     text-decoration: none;
 }
 
 .port-container:hover {
-    opacity: 0.75;
-    filter: alpha(opacity=25);
+    opacity: 0.65;
+    filter: alpha(opacity=65);
 }
 
 .port-container:hover .center {
     visibility: visible;
-    opacity: 1;
 }
+
+/* Projects Section Stuff */
 
 .projects-section {
     height: 100%;
-    padding-top: 1%;
+    padding-top: 2%;
     text-align: left;
     background: #fff;
 }
 
 .project-title {
     color: #4DCCB0;
-    font-size: 1.5em;
+    font-size: 160%;
     font-family: Montserrat;
     text-decoration: none;
 }
