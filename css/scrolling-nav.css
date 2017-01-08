@@ -192,7 +192,9 @@ of those sections to manage the look and feel of the site. */
 }
 
 .port-image {
-    min-width: 300px;
+    max-width: 350px;
+    width: 40%;
+    height: auto;
     padding: 5px;
 }
 
