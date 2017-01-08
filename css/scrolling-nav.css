@@ -96,7 +96,7 @@ p {
 
 .pro {
 	width: 35%;
-    min-width: 300px;
+    min-width: 250px;
 	height: auto;
 	display: block;
 	margin: auto;
@@ -151,7 +151,7 @@ of those sections to manage the look and feel of the site. */
 }
 
 .intro-section {
-    height: 90%;
+    height: 100%;
     padding-top: 150px;
     text-align: center;
     background-image: url("stars.png");
