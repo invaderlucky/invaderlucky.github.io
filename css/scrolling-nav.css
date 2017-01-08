@@ -152,14 +152,44 @@ of those sections to manage the look and feel of the site. */
 }
 
 .portfolio-section {
-    height: 50%;
+    height: 80%;
     padding-top: 1%;
     text-align: center;
     background: #eee;
 }
 
+.port-container {
+    position: relative;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1vw;
+    color: #fff;
+
+    visibility: hidden;
+}
+
+.center:hover {
+    color: #01BAEF;
+    text-decoration: none;
+}
+
+.port-container:hover {
+    opacity: 0.75;
+    filter: alpha(opacity=25);
+}
+
+.port-container:hover .center {
+    visibility: visible;
+    opacity: 1;
+}
+
 .projects-section {
-    height: 50%;
+    height: 100%;
     padding-top: 1%;
     text-align: left;
     background: #fff;
