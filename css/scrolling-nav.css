@@ -146,6 +146,11 @@ of those sections to manage the look and feel of the site. */
     padding-bottom: 10px;
 }
 
+.sub-section-header {
+    color: #0B132B;
+	font-family: Montserrat;
+}
+
 .subtitle {
     color: #01BAEF;
 }
@@ -244,7 +249,7 @@ of those sections to manage the look and feel of the site. */
 
 .project-title {
     color: #4DCCB0;
-    font-size: 160%;
+    font-size: 150%;
     font-family: Montserrat;
     text-decoration: none;
 }
