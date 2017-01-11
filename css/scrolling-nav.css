@@ -171,6 +171,10 @@ of those sections to manage the look and feel of the site. */
     background: #fff;
 }
 
+.about-pic {
+     width: 80%;
+}
+
 /* Portfolio Section Stuff */
 
 .portfolio-section {
@@ -266,5 +270,30 @@ of those sections to manage the look and feel of the site. */
         font-family: "Source Sans Pro";
         font-size: 100%;
         color: #565656;
+    }
+
+    .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: "Source Sans Pro";
+        font-size: 100%;
+        max-width: 300px;
+        max-height: 350px;
+        color: #fff;
+        
+        text-shadow: 2px 2px 0px #000;
+        visibility: hidden;
+    }
+
+    .center-link {
+        text-decoration: none;
+        color: #4DCCB0;
+        font-size: 110%;
+    }
+
+    .about-pic {
+        width: 40%;
     }
 }
