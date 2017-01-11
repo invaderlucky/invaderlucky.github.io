@@ -292,11 +292,19 @@ of those sections to manage the look and feel of the site. */
         padding-bottom: 5px;
     }
 
+    .portfolio-section {
+        height: 180%;
+        padding-top: 2%;
+        text-align: center;
+        background: #eee;
+    }
+
     .port-image {
         max-width: 350px;
         width: 60%;
         height: auto;
         padding: 5px;
+        margin-right: 40px;
     }
 
     .center {
