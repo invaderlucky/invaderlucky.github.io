@@ -294,6 +294,8 @@ of those sections to manage the look and feel of the site. */
     }
 
     .about-pic {
-        width: 40%;
+        width: 30%;
+        min-width: 100px;
+        height: auto;
     }
 }
