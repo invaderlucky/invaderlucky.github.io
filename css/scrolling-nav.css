@@ -279,7 +279,7 @@ of those sections to manage the look and feel of the site. */
     }
 
     .about-section {
-        height: 75%;
+        height: 110%;
         padding-top: 2%;
         text-align: center;
         background: #fff;
@@ -293,7 +293,7 @@ of those sections to manage the look and feel of the site. */
     }
 
     .portfolio-section {
-        height: 110%;
+        height: 120%;
         padding-top: 2%;
         text-align: center;
         background: #eee;
