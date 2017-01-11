@@ -330,6 +330,7 @@ of those sections to manage the look and feel of the site. */
 }
 
 @media screen and (min-width: 600px) {
+    /*
    p {
         font-family: "Source Sans Pro";
         font-size: 100%;
@@ -377,6 +378,7 @@ of those sections to manage the look and feel of the site. */
         color: #4DCCB0;
         font-size: 110%;
     }
+    */
 }
 
 @media screen and (min-width: 1680px) {}
