@@ -258,3 +258,13 @@ of those sections to manage the look and feel of the site. */
     color: #227764;
     text-decoration: none;
 }
+
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+    p {
+        font-family: "Source Sans Pro";
+        font-size: 100%;
+        color: #565656;
+    }
+}
