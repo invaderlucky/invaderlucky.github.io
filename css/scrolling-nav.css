@@ -226,11 +226,17 @@ of those sections to manage the look and feel of the site. */
     text-decoration: none;
     color: #4DCCB0;
     font-size: 185%;
+    padding: 2px;
+    background: #0B132B;
+    border-radius: 4px;
 }
 
 .center-link:hover {
     color: #227764;
     text-decoration: none;
+    padding: 2px;
+    background: #000;
+    border-radius: 4px;
 }
 
 .port-container:hover {
@@ -273,7 +279,7 @@ of those sections to manage the look and feel of the site. */
     }
 
     .about-section {
-        height: 85%;
+        height: 100%;
         padding-top: 2%;
         text-align: center;
         background: #fff;
@@ -283,11 +289,12 @@ of those sections to manage the look and feel of the site. */
         width: 40%;
         min-width: 100px;
         height: auto;
+        padding-bottom: 5px;
     }
 
     .port-image {
         max-width: 350px;
-        width: 60%;
+        width: 70%;
         height: auto;
         padding: 5px;
     }
@@ -314,7 +321,55 @@ of those sections to manage the look and feel of the site. */
     }
 }
 
-@media screen and (min-width: 600px) {}
+@media screen and (min-width: 600px) {
+   p {
+        font-family: "Source Sans Pro";
+        font-size: 100%;
+        color: #565656;
+    }
+
+    .about-section {
+        height: 100%;
+        padding-top: 2%;
+        text-align: center;
+        background: #fff;
+    }
+
+    .about-pic {
+        width: 40%;
+        min-width: 100px;
+        height: auto;
+        padding-bottom: 5px;
+    }
+
+    .port-image {
+        max-width: 350px;
+        width: 70%;
+        height: auto;
+        padding: 5px;
+    }
+
+    .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: "Source Sans Pro";
+        font-size: 90%;
+        max-width: 300px;
+        max-height: 350px;
+        color: #fff;
+        
+        text-shadow: 2px 2px 0px #000;
+        visibility: hidden;
+    }
+
+    .center-link {
+        text-decoration: none;
+        color: #4DCCB0;
+        font-size: 100%;
+    }
+}
 
 @media screen and (min-width: 1680px) {}
 
