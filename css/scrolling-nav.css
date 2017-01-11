@@ -274,12 +274,12 @@ of those sections to manage the look and feel of the site. */
 @media screen and (max-width: 480px) {
     p {
         font-family: "Source Sans Pro";
-        font-size: 100%;
+        font-size: 140%;
         color: #565656;
     }
 
     .about-section {
-        height: 85%;
+        height: 75%;
         padding-top: 2%;
         text-align: center;
         background: #fff;
@@ -293,7 +293,7 @@ of those sections to manage the look and feel of the site. */
     }
 
     .portfolio-section {
-        height: 180%;
+        height: 110%;
         padding-top: 2%;
         text-align: center;
         background: #eee;
@@ -309,11 +309,12 @@ of those sections to manage the look and feel of the site. */
 
     .center {
         position: absolute;
+        padding-right: 40px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         font-family: "Source Sans Pro";
-        font-size: 100%;
+        font-size: 120%;
         max-width: 300px;
         max-height: 350px;
         color: #fff;
@@ -325,7 +326,7 @@ of those sections to manage the look and feel of the site. */
     .center-link {
         text-decoration: none;
         color: #4DCCB0;
-        font-size: 110%;
+        font-size: 130%;
     }
 }
 
