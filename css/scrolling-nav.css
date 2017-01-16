@@ -165,7 +165,7 @@ of those sections to manage the look and feel of the site. */
 /* About Section Stuff */
 
 .about-section {
-    height: 50%;
+    height: 60%;
     padding-top: 2%;
     text-align: center;
     background: #fff;
@@ -270,51 +270,219 @@ of those sections to manage the look and feel of the site. */
 }
 
 
-/* Mobile */
-@media screen and (max-width: 480px) {
+/* Screen Sizes */
+
+@media screen and (max-width: 1680px) {
+    body {
+        width: 100%;
+        height: 100%;
+        font-size: 100%;
+    }
+
+    html {
+        width: 100%;
+        height: 100%;
+    }
+
     p {
         font-family: "Source Sans Pro";
-        font-size: 140%;
+        font-size: 175%;
         color: #565656;
     }
 
+    /* Container for images and text to be side by side*/
+    .float-my-children > * {
+        float: left;
+        margin-right: 5%;
+    }
+
+    /* this is called a clearfix. it makes sure that the container's children floats are cleared, without using extra markup */
+    .clearfix {
+        *zoom:1 /* for IE */
+    }
+
+    .clearfix:before,
+    .clearfix:after {
+        content: " ";
+        display: table;
+    }
+
+    .clearfix:after {
+        clear: both;
+    }
+
+    /* end clearfix*/
+
+    /* Navigation Bar Stuff */
+
+    @media(min-width:767px) {
+        .navbar {
+            padding: 20px 0;
+            opacity: 0.85;
+            filter: alpha(opacity=85);
+            background: #000;
+            font-family: Montserrat;
+            -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+            -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+            transition: background .5s ease-in-out,padding .5s ease-in-out;
+        }
+
+        .navbar li {
+            line-height: 40px;
+            height: 40px;
+            border:none;
+            font-size: 165%;
+        }
+
+        .navbar:hover {
+            opacity: 1.0;
+        }
+
+        .top-nav-collapse {
+            padding: 0;
+        }
+    }
+
+    /* Individual Navigation Buttons */
+
+    #home-btn:hover {
+        background-color: #0B132B;
+    }
+
+    #about-btn:hover {
+        background-color: #0B132B;
+    }
+
+    #portfolio-btn:hover {
+        background-color: #0B132B;
+    }
+
+    #projects-btn:hover {
+        background-color: #0B132B;
+    }
+
+    /* Profile Picture */
+
+    .pro {
+        width: 30%;
+        min-width: 200px;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+    /* Social Icons Stuff */
+
+    .table {
+        padding-right: 40px;
+    }
+
+    #social ul{ 
+        list-style: none;
+    }
+
+    #social li {
+        display: inline;
+        padding: 5px;
+        margin: auto;
+    }
+
+    .icon {
+        width: 7%;
+        min-width: 35px;
+        height: auto;
+    }
+
+    .icon:hover {
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+    }
+
+    /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+    The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+    of those sections to manage the look and feel of the site. */
+
+    /* Intro Section Stuff */
+
+    .header {
+        color: #01BAEF;
+        font-family: Montserrat;
+    }
+
+    .section-header {
+        color: #FF3B72;
+        font-family: Montserrat;
+        padding-bottom: 10px;
+    }
+
+    .sub-section-header {
+        color: #0B132B;
+        font-family: Montserrat;
+    }
+
+    .subtitle {
+        color: #01BAEF;
+    }
+
+    .intro-section {
+        height: 100%;
+        padding-top: 150px;
+        text-align: center;
+        background-image: url("stars.png");
+    }
+
+    /* About Section Stuff */
+
     .about-section {
-        height: 130%;
+        height: 60%;
         padding-top: 2%;
         text-align: center;
         background: #fff;
     }
 
     .about-pic {
-        width: 40%;
-        min-width: 150px;
-        height: auto;
-        padding-bottom: 5px;
+        width: 80%;
     }
 
+    /* Portfolio Section Stuff */
+
     .portfolio-section {
-        height: 120%;
+        height: 80%;
         padding-top: 2%;
         text-align: center;
         background: #eee;
     }
 
+    #gallery ul{ 
+        list-style: none;
+        display: inline;
+    }
+
+    #gallery li {
+        display: inline;
+        list-style: none;
+    }
+
+    .port-container {
+        position: relative;
+        display: inline;
+        margin: auto;
+    }
+
     .port-image {
         max-width: 350px;
-        width: 60%;
+        width: 40%;
         height: auto;
         padding: 5px;
-        margin-right: 40px;
     }
 
     .center {
         position: absolute;
-        padding-right: 40px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         font-family: "Source Sans Pro";
-        font-size: 120%;
+        font-size: 175%;
         max-width: 300px;
         max-height: 350px;
         color: #fff;
@@ -326,11 +494,590 @@ of those sections to manage the look and feel of the site. */
     .center-link {
         text-decoration: none;
         color: #4DCCB0;
-        font-size: 130%;
+        font-size: 185%;
+        padding: 2px;
+        background: #0B132B;
+        border-radius: 4px;
+    }
+
+    .center-link:hover {
+        color: #227764;
+        text-decoration: none;
+        padding: 2px;
+        background: #000;
+        border-radius: 4px;
+    }
+
+    .port-container:hover {
+        opacity: 0.65;
+        filter: alpha(opacity=65);
+    }
+
+    .port-container:hover .center {
+        visibility: visible;
+    }
+
+    /* Projects Section Stuff */
+
+    .projects-section {
+        height: 100%;
+        padding-top: 2%;
+        text-align: left;
+        background: #fff;
+    }
+
+    .project-title {
+        color: #4DCCB0;
+        font-size: 150%;
+        font-family: Montserrat;
+        text-decoration: none;
+    }
+
+    .project-title:hover {
+        color: #227764;
+        text-decoration: none;
+    }
+
+}
+
+@media screen and (max-width: 1280px) {
+    body {
+        width: 100%;
+        height: 100%;
+        font-size: 100%;
+    }
+
+    html {
+        width: 100%;
+        height: 100%;
+    }
+
+    p {
+        font-family: "Source Sans Pro";
+        font-size: 175%;
+        color: #565656;
+    }
+
+    /* Container for images and text to be side by side*/
+    .float-my-children > * {
+        float: left;
+        margin-right: 5%;
+    }
+
+    /* this is called a clearfix. it makes sure that the container's children floats are cleared, without using extra markup */
+    .clearfix {
+        *zoom:1 /* for IE */
+    }
+
+    .clearfix:before,
+    .clearfix:after {
+        content: " ";
+        display: table;
+    }
+
+    .clearfix:after {
+        clear: both;
+    }
+
+    /* end clearfix*/
+
+    /* Navigation Bar Stuff */
+
+    @media(min-width:767px) {
+        .navbar {
+            padding: 20px 0;
+            opacity: 0.85;
+            filter: alpha(opacity=85);
+            background: #000;
+            font-family: Montserrat;
+            -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+            -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+            transition: background .5s ease-in-out,padding .5s ease-in-out;
+        }
+
+        .navbar li {
+            line-height: 40px;
+            height: 40px;
+            border:none;
+            font-size: 165%;
+        }
+
+        .navbar:hover {
+            opacity: 1.0;
+        }
+
+        .top-nav-collapse {
+            padding: 0;
+        }
+    }
+
+    /* Individual Navigation Buttons */
+
+    #home-btn:hover {
+        background-color: #0B132B;
+    }
+
+    #about-btn:hover {
+        background-color: #0B132B;
+    }
+
+    #portfolio-btn:hover {
+        background-color: #0B132B;
+    }
+
+    #projects-btn:hover {
+        background-color: #0B132B;
+    }
+
+    /* Profile Picture */
+
+    .pro {
+        width: 30%;
+        min-width: 200px;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+    /* Social Icons Stuff */
+
+    .table {
+        padding-right: 40px;
+    }
+
+    #social ul{ 
+        list-style: none;
+    }
+
+    #social li {
+        display: inline;
+        padding: 5px;
+        margin: auto;
+    }
+
+    .icon {
+        width: 7%;
+        min-width: 35px;
+        height: auto;
+    }
+
+    .icon:hover {
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+    }
+
+    /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+    The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+    of those sections to manage the look and feel of the site. */
+
+    /* Intro Section Stuff */
+
+    .header {
+        color: #01BAEF;
+        font-family: Montserrat;
+    }
+
+    .section-header {
+        color: #FF3B72;
+        font-family: Montserrat;
+        padding-bottom: 10px;
+    }
+
+    .sub-section-header {
+        color: #0B132B;
+        font-family: Montserrat;
+    }
+
+    .subtitle {
+        color: #01BAEF;
+    }
+
+    .intro-section {
+        height: 100%;
+        padding-top: 150px;
+        text-align: center;
+        background-image: url("stars.png");
+    }
+
+    /* About Section Stuff */
+
+    .about-section {
+        height: 60%;
+        padding-top: 2%;
+        text-align: center;
+        background: #fff;
+    }
+
+    .about-pic {
+        width: 80%;
+    }
+
+    /* Portfolio Section Stuff */
+
+    .portfolio-section {
+        height: 80%;
+        padding-top: 2%;
+        text-align: center;
+        background: #eee;
+    }
+
+    #gallery ul{ 
+        list-style: none;
+        display: inline;
+    }
+
+    #gallery li {
+        display: inline;
+        list-style: none;
+    }
+
+    .port-container {
+        position: relative;
+        display: inline;
+        margin: auto;
+    }
+
+    .port-image {
+        max-width: 350px;
+        width: 40%;
+        height: auto;
+        padding: 5px;
+    }
+
+    .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: "Source Sans Pro";
+        font-size: 175%;
+        max-width: 300px;
+        max-height: 350px;
+        color: #fff;
+        
+        text-shadow: 2px 2px 0px #000;
+        visibility: hidden;
+    }
+
+    .center-link {
+        text-decoration: none;
+        color: #4DCCB0;
+        font-size: 185%;
+        padding: 2px;
+        background: #0B132B;
+        border-radius: 4px;
+    }
+
+    .center-link:hover {
+        color: #227764;
+        text-decoration: none;
+        padding: 2px;
+        background: #000;
+        border-radius: 4px;
+    }
+
+    .port-container:hover {
+        opacity: 0.65;
+        filter: alpha(opacity=65);
+    }
+
+    .port-container:hover .center {
+        visibility: visible;
+    }
+
+    /* Projects Section Stuff */
+
+    .projects-section {
+        height: 100%;
+        padding-top: 2%;
+        text-align: left;
+        background: #fff;
+    }
+
+    .project-title {
+        color: #4DCCB0;
+        font-size: 150%;
+        font-family: Montserrat;
+        text-decoration: none;
+    }
+
+    .project-title:hover {
+        color: #227764;
+        text-decoration: none;
+    }
+
+}
+
+@media screen and (max-width: 960px) {
+    body {
+        width: 100%;
+        height: 100%;
+        font-size: 100%;
+    }
+
+    html {
+        width: 100%;
+        height: 100%;
+    }
+
+    p {
+        font-family: "Source Sans Pro";
+        font-size: 175%;
+        color: #565656;
+    }
+
+    /* Container for images and text to be side by side*/
+    .float-my-children > * {
+        float: left;
+        margin-right: 5%;
+    }
+
+    /* this is called a clearfix. it makes sure that the container's children floats are cleared, without using extra markup */
+    .clearfix {
+        *zoom:1 /* for IE */
+    }
+
+    .clearfix:before,
+    .clearfix:after {
+        content: " ";
+        display: table;
+    }
+
+    .clearfix:after {
+        clear: both;
+    }
+
+    /* end clearfix*/
+
+    /* Navigation Bar Stuff */
+
+    @media(min-width:767px) {
+        .navbar {
+            padding: 20px 0;
+            opacity: 0.85;
+            filter: alpha(opacity=85);
+            background: #000;
+            font-family: Montserrat;
+            -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+            -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+            transition: background .5s ease-in-out,padding .5s ease-in-out;
+        }
+
+        .navbar li {
+            line-height: 40px;
+            height: 40px;
+            border:none;
+            font-size: 165%;
+        }
+
+        .navbar:hover {
+            opacity: 1.0;
+        }
+
+        .top-nav-collapse {
+            padding: 0;
+        }
+    }
+
+    /* Individual Navigation Buttons */
+
+    #home-btn:hover {
+        background-color: #0B132B;
+    }
+
+    #about-btn:hover {
+        background-color: #0B132B;
+    }
+
+    #portfolio-btn:hover {
+        background-color: #0B132B;
+    }
+
+    #projects-btn:hover {
+        background-color: #0B132B;
+    }
+
+    /* Profile Picture */
+
+    .pro {
+        width: 30%;
+        min-width: 200px;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+    /* Social Icons Stuff */
+
+    .table {
+        padding-right: 40px;
+    }
+
+    #social ul{ 
+        list-style: none;
+    }
+
+    #social li {
+        display: inline;
+        padding: 5px;
+        margin: auto;
+    }
+
+    .icon {
+        width: 7%;
+        min-width: 35px;
+        height: auto;
+    }
+
+    .icon:hover {
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+    }
+
+    /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+    The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+    of those sections to manage the look and feel of the site. */
+
+    /* Intro Section Stuff */
+
+    .header {
+        color: #01BAEF;
+        font-family: Montserrat;
+    }
+
+    .section-header {
+        color: #FF3B72;
+        font-family: Montserrat;
+        padding-bottom: 10px;
+    }
+
+    .sub-section-header {
+        color: #0B132B;
+        font-family: Montserrat;
+    }
+
+    .subtitle {
+        color: #01BAEF;
+    }
+
+    .intro-section {
+        height: 100%;
+        padding-top: 150px;
+        text-align: center;
+        background-image: url("stars.png");
+    }
+
+    /* About Section Stuff */
+
+    .about-section {
+        height: 100%;
+        padding-top: 2%;
+        text-align: center;
+        background: #fff;
+    }
+
+    .about-pic {
+        width: 80%;
+        max-width: 220px;
+    }
+
+    /* Portfolio Section Stuff */
+
+    .portfolio-section {
+        height: 80%;
+        padding-top: 2%;
+        text-align: center;
+        background: #eee;
+    }
+
+    #gallery ul{ 
+        list-style: none;
+        display: inline;
+    }
+
+    #gallery li {
+        display: inline;
+        list-style: none;
+    }
+
+    .port-container {
+        position: relative;
+        display: inline;
+        margin: auto;
+    }
+
+    .port-image {
+        max-width: 350px;
+        width: 40%;
+        height: auto;
+        padding: 5px;
+    }
+
+    .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: "Source Sans Pro";
+        font-size: 175%;
+        max-width: 300px;
+        max-height: 350px;
+        color: #fff;
+        
+        text-shadow: 2px 2px 0px #000;
+        visibility: hidden;
+    }
+
+    .center-link {
+        text-decoration: none;
+        color: #4DCCB0;
+        font-size: 185%;
+        padding: 2px;
+        background: #0B132B;
+        border-radius: 4px;
+    }
+
+    .center-link:hover {
+        color: #227764;
+        text-decoration: none;
+        padding: 2px;
+        background: #000;
+        border-radius: 4px;
+    }
+
+    .port-container:hover {
+        opacity: 0.65;
+        filter: alpha(opacity=65);
+    }
+
+    .port-container:hover .center {
+        visibility: visible;
+    }
+
+    /* Projects Section Stuff */
+
+    .projects-section {
+        height: 100%;
+        padding-top: 2%;
+        text-align: left;
+        background: #fff;
+    }
+
+    .project-title {
+        color: #4DCCB0;
+        font-size: 150%;
+        font-family: Montserrat;
+        text-decoration: none;
+    }
+
+    .project-title:hover {
+        color: #227764;
+        text-decoration: none;
     }
 }
 
-@media screen and (min-width: 600px) {
+/*
+@media screen and (max-width: 600px) {
    p {
         font-family: "Source Sans Pro";
         font-size: 140%;
@@ -388,218 +1135,52 @@ of those sections to manage the look and feel of the site. */
         font-size: 130%;
     }
 }
+*/
 
-@media screen and (min-width: 1280px) {
-    body {
-        width: 100%;
-        height: 100%;
-        font-size: 100%;
-    }
-
-    html {
-        width: 100%;
-        height: 100%;
-    }
-
+@media screen and (max-width: 480px) {
     p {
         font-family: "Source Sans Pro";
-        font-size: 175%;
+        font-size: 140%;
         color: #565656;
     }
 
-    /* Container for images and text to be side by side*/
-    .float-my-children > * {
-        float: left;
-        margin-right: 5%;
-    }
-
-    /* this is called a clearfix. it makes sure that the container's children floats are cleared, without using extra markup */
-    .clearfix {
-        *zoom:1 /* for IE */
-    }
-
-    .clearfix:before,
-    .clearfix:after {
-        content: " ";
-        display: table;
-    }
-
-    .clearfix:after {
-        clear: both;
-    }
-
-    /* end clearfix*/
-
-    /* Navigation Bar Stuff */
-
-    @media(min-width:767px) {
-        .navbar {
-            padding: 20px 0;
-            opacity: 0.85;
-            filter: alpha(opacity=85);
-            background: #000;
-            font-family: Montserrat;
-            -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-            -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-            transition: background .5s ease-in-out,padding .5s ease-in-out;
-        }
-
-        .navbar li {
-            line-height: 40px;
-            height: 40px;
-            border:none;
-            font-size: 165%;
-        }
-
-        .navbar:hover {
-            opacity: 1.0;
-        }
-
-        .top-nav-collapse {
-            padding: 0;
-        }
-    }
-
-    /* Individual Navigation Buttons */
-
-    #home-btn:hover {
-        background-color: #0B132B;
-    }
-
-    #about-btn:hover {
-        background-color: #0B132B;
-    }
-
-    #portfolio-btn:hover {
-        background-color: #0B132B;
-    }
-
-    #projects-btn:hover {
-        background-color: #0B132B;
-    }
-
-    /* Profile Picture */
-
-    .pro {
-        width: 30%;
-        min-width: 200px;
-        height: auto;
-        display: block;
-        margin: auto;
-    }
-
-    /* Social Icons Stuff */
-
-    .table {
-        padding-right: 40px;
-    }
-
-    #social ul{ 
-        list-style: none;
-    }
-
-    #social li {
-        display: inline;
-        padding: 5px;
-        margin: auto;
-    }
-
-    .icon {
-        width: 7%;
-        min-width: 35px;
-        height: auto;
-    }
-
-    .icon:hover {
-        opacity: 0.5;
-        filter: alpha(opacity=50);
-    }
-
-    /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
-    The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
-    of those sections to manage the look and feel of the site. */
-
-    /* Intro Section Stuff */
-
-    .header {
-        color: #01BAEF;
-        font-family: Montserrat;
-    }
-
-    .section-header {
-        color: #FF3B72;
-        font-family: Montserrat;
-        padding-bottom: 10px;
-    }
-
-    .sub-section-header {
-        color: #0B132B;
-        font-family: Montserrat;
-    }
-
-    .subtitle {
-        color: #01BAEF;
-    }
-
-    .intro-section {
-        height: 100%;
-        padding-top: 150px;
-        text-align: center;
-        background-image: url("stars.png");
-    }
-
-    /* About Section Stuff */
-
     .about-section {
-        height: 50%;
+        height: 130%;
         padding-top: 2%;
         text-align: center;
         background: #fff;
     }
 
     .about-pic {
-        width: 80%;
+        width: 40%;
+        min-width: 150px;
+        height: auto;
+        padding-bottom: 5px;
     }
 
-    /* Portfolio Section Stuff */
-
     .portfolio-section {
-        height: 80%;
+        height: 120%;
         padding-top: 2%;
         text-align: center;
         background: #eee;
     }
 
-    #gallery ul{ 
-        list-style: none;
-        display: inline;
-    }
-
-    #gallery li {
-        display: inline;
-        list-style: none;
-    }
-
-    .port-container {
-        position: relative;
-        display: inline;
-        margin: auto;
-    }
-
     .port-image {
         max-width: 350px;
-        width: 40%;
+        width: 60%;
         height: auto;
         padding: 5px;
+        margin-right: 40px;
     }
 
     .center {
         position: absolute;
+        padding-right: 40px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         font-family: "Source Sans Pro";
-        font-size: 175%;
+        font-size: 120%;
         max-width: 300px;
         max-height: 350px;
         color: #fff;
@@ -611,315 +1192,6 @@ of those sections to manage the look and feel of the site. */
     .center-link {
         text-decoration: none;
         color: #4DCCB0;
-        font-size: 185%;
-        padding: 2px;
-        background: #0B132B;
-        border-radius: 4px;
-    }
-
-    .center-link:hover {
-        color: #227764;
-        text-decoration: none;
-        padding: 2px;
-        background: #000;
-        border-radius: 4px;
-    }
-
-    .port-container:hover {
-        opacity: 0.65;
-        filter: alpha(opacity=65);
-    }
-
-    .port-container:hover .center {
-        visibility: visible;
-    }
-
-    /* Projects Section Stuff */
-
-    .projects-section {
-        height: 100%;
-        padding-top: 2%;
-        text-align: left;
-        background: #fff;
-    }
-
-    .project-title {
-        color: #4DCCB0;
-        font-size: 150%;
-        font-family: Montserrat;
-        text-decoration: none;
-    }
-
-    .project-title:hover {
-        color: #227764;
-        text-decoration: none;
-    }
-
-}
-
-@media screen and (min-width: 900px) {
-    body {
-        width: 100%;
-        height: 100%;
-        font-size: 100%;
-    }
-
-    html {
-        width: 100%;
-        height: 100%;
-    }
-
-    p {
-        font-family: "Source Sans Pro";
-        font-size: 175%;
-        color: #565656;
-    }
-
-    /* Container for images and text to be side by side*/
-    .float-my-children > * {
-        float: left;
-        margin-right: 5%;
-    }
-
-    /* this is called a clearfix. it makes sure that the container's children floats are cleared, without using extra markup */
-    .clearfix {
-        *zoom:1 /* for IE */
-    }
-
-    .clearfix:before,
-    .clearfix:after {
-        content: " ";
-        display: table;
-    }
-
-    .clearfix:after {
-        clear: both;
-    }
-
-    /* end clearfix*/
-
-    /* Navigation Bar Stuff */
-
-    @media(min-width:767px) {
-        .navbar {
-            padding: 20px 0;
-            opacity: 0.85;
-            filter: alpha(opacity=85);
-            background: #000;
-            font-family: Montserrat;
-            -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-            -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-            transition: background .5s ease-in-out,padding .5s ease-in-out;
-        }
-
-        .navbar li {
-            line-height: 40px;
-            height: 40px;
-            border:none;
-            font-size: 165%;
-        }
-
-        .navbar:hover {
-            opacity: 1.0;
-        }
-
-        .top-nav-collapse {
-            padding: 0;
-        }
-    }
-
-    /* Individual Navigation Buttons */
-
-    #home-btn:hover {
-        background-color: #0B132B;
-    }
-
-    #about-btn:hover {
-        background-color: #0B132B;
-    }
-
-    #portfolio-btn:hover {
-        background-color: #0B132B;
-    }
-
-    #projects-btn:hover {
-        background-color: #0B132B;
-    }
-
-    /* Profile Picture */
-
-    .pro {
-        width: 30%;
-        min-width: 200px;
-        height: auto;
-        display: block;
-        margin: auto;
-    }
-
-    /* Social Icons Stuff */
-
-    .table {
-        padding-right: 40px;
-    }
-
-    #social ul{ 
-        list-style: none;
-    }
-
-    #social li {
-        display: inline;
-        padding: 5px;
-        margin: auto;
-    }
-
-    .icon {
-        width: 7%;
-        min-width: 35px;
-        height: auto;
-    }
-
-    .icon:hover {
-        opacity: 0.5;
-        filter: alpha(opacity=50);
-    }
-
-    /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
-    The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
-    of those sections to manage the look and feel of the site. */
-
-    /* Intro Section Stuff */
-
-    .header {
-        color: #01BAEF;
-        font-family: Montserrat;
-    }
-
-    .section-header {
-        color: #FF3B72;
-        font-family: Montserrat;
-        padding-bottom: 10px;
-    }
-
-    .sub-section-header {
-        color: #0B132B;
-        font-family: Montserrat;
-    }
-
-    .subtitle {
-        color: #01BAEF;
-    }
-
-    .intro-section {
-        height: 100%;
-        padding-top: 150px;
-        text-align: center;
-        background-image: url("stars.png");
-    }
-
-    /* About Section Stuff */
-
-    .about-section {
-        height: 50%;
-        padding-top: 2%;
-        text-align: center;
-        background: #fff;
-    }
-
-    .about-pic {
-        width: 80%;
-    }
-
-    /* Portfolio Section Stuff */
-
-    .portfolio-section {
-        height: 80%;
-        padding-top: 2%;
-        text-align: center;
-        background: #eee;
-    }
-
-    #gallery ul{ 
-        list-style: none;
-        display: inline;
-    }
-
-    #gallery li {
-        display: inline;
-        list-style: none;
-    }
-
-    .port-container {
-        position: relative;
-        display: inline;
-        margin: auto;
-    }
-
-    .port-image {
-        max-width: 350px;
-        width: 40%;
-        height: auto;
-        padding: 5px;
-    }
-
-    .center {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: "Source Sans Pro";
-        font-size: 175%;
-        max-width: 300px;
-        max-height: 350px;
-        color: #fff;
-        
-        text-shadow: 2px 2px 0px #000;
-        visibility: hidden;
-    }
-
-    .center-link {
-        text-decoration: none;
-        color: #4DCCB0;
-        font-size: 185%;
-        padding: 2px;
-        background: #0B132B;
-        border-radius: 4px;
-    }
-
-    .center-link:hover {
-        color: #227764;
-        text-decoration: none;
-        padding: 2px;
-        background: #000;
-        border-radius: 4px;
-    }
-
-    .port-container:hover {
-        opacity: 0.65;
-        filter: alpha(opacity=65);
-    }
-
-    .port-container:hover .center {
-        visibility: visible;
-    }
-
-    /* Projects Section Stuff */
-
-    .projects-section {
-        height: 100%;
-        padding-top: 2%;
-        text-align: left;
-        background: #fff;
-    }
-
-    .project-title {
-        color: #4DCCB0;
-        font-size: 150%;
-        font-family: Montserrat;
-        text-decoration: none;
-    }
-
-    .project-title:hover {
-        color: #227764;
-        text-decoration: none;
+        font-size: 130%;
     }
 }
