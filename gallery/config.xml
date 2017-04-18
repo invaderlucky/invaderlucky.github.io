@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<juiceboxgallery 
+
+	resizeOnImport="false"
+	galleryTitle="Design Portfolio"
+
+>
+  <image imageURL="images/mini-3.jpg"
+	thumbURL="thumbs/mini-3.jpg"
+	linkURL="images/mini-3.jpg"
+	linkTarget="_blank"
+	sourcePath="D:\Documents\CSC482\shrits\mini-3.png">
+    <title><![CDATA[Empathy Studios Logo]]></title>
+    <caption><![CDATA[Final logo design for the studio I was a part of in CSC482. Created using Adobe Illustrator and GIMP.]]></caption>
+  </image>
+  <image imageURL="images/csc482.jpg"
+	thumbURL="thumbs/csc482.jpg"
+	linkURL="images/csc482.jpg"
+	linkTarget="_blank"
+	sourcePath="D:\Documents\portfolio\csc482.png">
+    <title><![CDATA[CSC482 T-Shirt]]></title>
+    <caption><![CDATA[Front and back of the t-shirt for Adv Game Projects, featuring both teams. Created using Adobe Illustrator and GIMP.]]></caption>
+  </image>
+  <image imageURL="images/rosie.jpg"
+	thumbURL="thumbs/rosie.jpg"
+	linkURL="images/rosie.jpg"
+	linkTarget="_blank"
+	sourcePath="D:\Documents\portfolio\rosie.png">
+    <title><![CDATA[Rosie the WiCS-iter]]></title>
+    <caption><![CDATA[Original sketch by Monica Poletti. Redrawn and colored and use for t-shirts and other swag. Created using Inkscape.]]></caption>
+  </image>
+  <image imageURL="images/stars.jpg"
+	thumbURL="thumbs/stars.jpg"
+	linkURL="images/stars.jpg"
+	linkTarget="_blank"
+	sourcePath="D:\Documents\portfolio\stars.png">
+    <title><![CDATA[STARS]]></title>
+    <caption><![CDATA[Designed shirt for STARS SLC members using Inkscape and GIMP. Front and back.]]></caption>
+  </image>
+  <image imageURL="images/diamondhacks.jpg"
+	thumbURL="thumbs/diamondhacks.jpg"
+	linkURL="images/diamondhacks.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\invaderlucky\invaderlucky.github.io\images\diamondhacks.png">
+    <title><![CDATA[DiamondHacks]]></title>
+    <caption><![CDATA[Created logo in GIMP and redesigned website: www.ncsudiamondhacks.com]]></caption>
+  </image>
+  <image imageURL="images/ladywolf.jpg"
+	thumbURL="thumbs/ladywolf.jpg"
+	linkURL="images/ladywolf.jpg"
+	linkTarget="_blank"
+	sourcePath="D:\Documents\portfolio\ladywolf.png">
+    <title><![CDATA[LadyWolf CSC Secrets T-Shirt]]></title>
+    <caption><![CDATA[Recreated the binary wolf I used in the STARS shirt for a joint WiCS and STARS event. Created in Adobe Illustrator.]]></caption>
+  </image>
+</juiceboxgallery>
