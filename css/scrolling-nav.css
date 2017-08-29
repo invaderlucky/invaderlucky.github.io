@@ -21,6 +21,13 @@ p {
     color: #565656;
 }
 
+/* Video stuff for responsive iframes */
+
+.video-container {
+    width: 100%;
+    height: 320px;
+}
+
 /* Container for images and text to be side by side*/
 .float-my-children > * {
     float: left;
