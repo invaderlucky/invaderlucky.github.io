@@ -84,7 +84,7 @@ p {
     background-color: #0B132B;
 }
 
-#portfolio-btn:hover {
+#school-btn:hover {
     background-color: #0B132B;
 }
 
@@ -175,77 +175,25 @@ of those sections to manage the look and feel of the site. */
      width: 80%;
 }
 
-/* Portfolio Section Stuff */
+/* School Section Stuff */
 
-.portfolio-section {
-    height: 90%;
+.school-section {
+    height: 300%;
     padding-top: 2%;
-    text-align: center;
-    background: #eee;
+    text-align: left;
+    background: #fff;
 }
 
-#gallery ul{ 
-    list-style: none;
-    display: inline;
-}
-
-#gallery li {
-    display: inline;
-    list-style: none;
-}
-
-.port-container {
-    position: relative;
-	display: inline;
-	margin: auto;
-}
-
-.port-image {
-    max-width: 350px;
-    width: 40%;
-    height: auto;
-    padding: 5px;
-}
-
-.center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: "Source Sans Pro";
-    font-size: 175%;
-    max-width: 300px;
-    max-height: 350px;
-    color: #fff;
-    
-    text-shadow: 2px 2px 0px #000;
-    visibility: hidden;
-}
-
-.center-link {
-    text-decoration: none;
+.school-title {
     color: #4DCCB0;
-    font-size: 185%;
-    padding: 2px;
-    background: #0B132B;
-    border-radius: 4px;
+    font-size: 150%;
+    font-family: Montserrat;
+    text-decoration: none;
 }
 
-.center-link:hover {
+.school-title:hover {
     color: #227764;
     text-decoration: none;
-    padding: 2px;
-    background: #000;
-    border-radius: 4px;
-}
-
-.port-container:hover {
-    opacity: 0.65;
-    filter: alpha(opacity=65);
-}
-
-.port-container:hover .center {
-    visibility: visible;
 }
 
 /* Projects Section Stuff */
@@ -353,7 +301,7 @@ of those sections to manage the look and feel of the site. */
         background-color: #0B132B;
     }
 
-    #portfolio-btn:hover {
+    #school-btn:hover {
         background-color: #0B132B;
     }
 
@@ -444,77 +392,25 @@ of those sections to manage the look and feel of the site. */
         width: 80%;
     }
 
-    /* Portfolio Section Stuff */
+    /* school Section Stuff */
 
-    .portfolio-section {
-        height: 80%;
+    .school-section {
+        height: 300%;
         padding-top: 2%;
-        text-align: center;
-        background: #eee;
+        text-align: left;
+        background: #fff;
     }
 
-    #gallery ul{ 
-        list-style: none;
-        display: inline;
-    }
-
-    #gallery li {
-        display: inline;
-        list-style: none;
-    }
-
-    .port-container {
-        position: relative;
-        display: inline;
-        margin: auto;
-    }
-
-    .port-image {
-        max-width: 350px;
-        width: 40%;
-        height: auto;
-        padding: 5px;
-    }
-
-    .center {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: "Source Sans Pro";
-        font-size: 175%;
-        max-width: 300px;
-        max-height: 350px;
-        color: #fff;
-        
-        text-shadow: 2px 2px 0px #000;
-        visibility: hidden;
-    }
-
-    .center-link {
-        text-decoration: none;
+    .school-title {
         color: #4DCCB0;
-        font-size: 185%;
-        padding: 2px;
-        background: #0B132B;
-        border-radius: 4px;
+        font-size: 150%;
+        font-family: Montserrat;
+        text-decoration: none;
     }
 
-    .center-link:hover {
+    .school-title:hover {
         color: #227764;
         text-decoration: none;
-        padding: 2px;
-        background: #000;
-        border-radius: 4px;
-    }
-
-    .port-container:hover {
-        opacity: 0.65;
-        filter: alpha(opacity=65);
-    }
-
-    .port-container:hover .center {
-        visibility: visible;
     }
 
     /* Projects Section Stuff */
@@ -523,7 +419,7 @@ of those sections to manage the look and feel of the site. */
         height: 100%;
         padding-top: 2%;
         text-align: left;
-        background: #DDDDDD;
+        background: #fff;
     }
 
     .project-title {
@@ -621,7 +517,7 @@ of those sections to manage the look and feel of the site. */
         background-color: #0B132B;
     }
 
-    #portfolio-btn:hover {
+    #school-btn:hover {
         background-color: #0B132B;
     }
 
@@ -712,77 +608,25 @@ of those sections to manage the look and feel of the site. */
         width: 80%;
     }
 
-    /* Portfolio Section Stuff */
+    /* School Section Stuff */
 
-    .portfolio-section {
-        height: 80%;
+    .school-section {
+        height: 300%;
         padding-top: 2%;
-        text-align: center;
-        background: #eee;
+        text-align: left;
+        background: #fff;
     }
 
-    #gallery ul{ 
-        list-style: none;
-        display: inline;
-    }
-
-    #gallery li {
-        display: inline;
-        list-style: none;
-    }
-
-    .port-container {
-        position: relative;
-        display: inline;
-        margin: auto;
-    }
-
-    .port-image {
-        max-width: 350px;
-        width: 40%;
-        height: auto;
-        padding: 5px;
-    }
-
-    .center {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: "Source Sans Pro";
-        font-size: 175%;
-        max-width: 300px;
-        max-height: 350px;
-        color: #fff;
-        
-        text-shadow: 2px 2px 0px #000;
-        visibility: hidden;
-    }
-
-    .center-link {
-        text-decoration: none;
+    .school-title {
         color: #4DCCB0;
-        font-size: 185%;
-        padding: 2px;
-        background: #0B132B;
-        border-radius: 4px;
+        font-size: 150%;
+        font-family: Montserrat;
+        text-decoration: none;
     }
 
-    .center-link:hover {
+    .school-title:hover {
         color: #227764;
         text-decoration: none;
-        padding: 2px;
-        background: #000;
-        border-radius: 4px;
-    }
-
-    .port-container:hover {
-        opacity: 0.65;
-        filter: alpha(opacity=65);
-    }
-
-    .port-container:hover .center {
-        visibility: visible;
     }
 
     /* Projects Section Stuff */
@@ -889,7 +733,7 @@ of those sections to manage the look and feel of the site. */
         background-color: #0B132B;
     }
 
-    #portfolio-btn:hover {
+    #school-btn:hover {
         background-color: #0B132B;
     }
 
@@ -981,77 +825,25 @@ of those sections to manage the look and feel of the site. */
         max-width: 220px;
     }
 
-    /* Portfolio Section Stuff */
+   /* School Section Stuff */
 
-    .portfolio-section {
-        height: 80%;
+    .school-section {
+        height: 300%;
         padding-top: 2%;
-        text-align: center;
-        background: #eee;
+        text-align: left;
+        background: #fff;
     }
 
-    #gallery ul{ 
-        list-style: none;
-        display: inline;
-    }
-
-    #gallery li {
-        display: inline;
-        list-style: none;
-    }
-
-    .port-container {
-        position: relative;
-        display: inline;
-        margin: auto;
-    }
-
-    .port-image {
-        max-width: 350px;
-        width: 40%;
-        height: auto;
-        padding: 5px;
-    }
-
-    .center {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: "Source Sans Pro";
-        font-size: 175%;
-        max-width: 300px;
-        max-height: 350px;
-        color: #fff;
-        
-        text-shadow: 2px 2px 0px #000;
-        visibility: hidden;
-    }
-
-    .center-link {
-        text-decoration: none;
+    .school-title {
         color: #4DCCB0;
-        font-size: 185%;
-        padding: 2px;
-        background: #0B132B;
-        border-radius: 4px;
+        font-size: 150%;
+        font-family: Montserrat;
+        text-decoration: none;
     }
 
-    .center-link:hover {
+    .school-title:hover {
         color: #227764;
         text-decoration: none;
-        padding: 2px;
-        background: #000;
-        border-radius: 4px;
-    }
-
-    .port-container:hover {
-        opacity: 0.65;
-        filter: alpha(opacity=65);
-    }
-
-    .port-container:hover .center {
-        visibility: visible;
     }
 
     /* Projects Section Stuff */
@@ -1098,7 +890,7 @@ of those sections to manage the look and feel of the site. */
         padding-bottom: 5px;
     }
 
-    .portfolio-section {
+    .school-section {
         height: 130%;
         padding-top: 2%;
         text-align: center;
@@ -1158,7 +950,7 @@ of those sections to manage the look and feel of the site. */
         padding-bottom: 5px;
     }
 
-    .portfolio-section {
+    .school-section {
         height: 160%;
         padding-top: 2%;
         text-align: center;
