@@ -14,9 +14,13 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- W3 Core CSS -->
+    <link href="css/w3.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- Custom CSS -->
-    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <!-- Custom and Toggle Navbar CSS -->
+    <link href="css/custom.css" rel="stylesheet">
 
 	<!-- Icon -->
 	<link rel="icon" type="image/x-icon" href="images/favi.ico">
@@ -36,10 +40,9 @@
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
+        <div class="w3-container">
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -70,42 +73,52 @@
             </div>
             <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
     </nav>
 
     <!-- Intro Section -->
     <section id="intro" class="intro-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
+            <div class="w3-row">
+                <div class="w3-col w3-container">
 					<img class="pro" src="images/profile.png" alt="Profile">
                     <h1 class="header"><b>Dana Christo</b></h1>
                     <h3 class="subtitle">Student <span style="color: #fff; font-size: 75%;">&#9679</span> Developer <span style="color: #fff; font-size: 75%;">&#9679</span> Gamer</h3>
                     <br />
-                        <div class="table">
-                            <ul id="social">
-                                <li><a href="mailto:dbchris3@ncsu.edu"><img class="icon" src="images/mail.png"></a></li>
-                                <li><a href="http://twitter.com/invader_lucky" target="_blank"><img class="icon" src="images/twitter.png"></a></li>
-                                <li><a href="http://linkedin.com/in/danachristo" target="_blank"><img class="icon" src="images/linkedin.png"></a></li>
-                                <li><a href="http://github.com/invaderlucky" target="_blank"><img class="icon" src="images/github.png"></a></li>
-                                <li><a href="Dana_Christo_Resume_17.pdf" target="_blank"><img class="icon" src="images/resume.png"></a></li>
-                            </ul>
-                        </div>
+                    <div class="w3-xxlarge">
+                        <a class="fa-stack fa-lg icon w3-hover-opacity" href="mailto:dbchris3@ncsu.edu">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i style="color: #0B132B" class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                        </a>
+                        <a class="fa-stack fa-lg icon w3-hover-opacity" href="http://twitter.com/invader_lucky">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i style="color: #0B132B" class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                        </a>
+                        <a class="fa-stack fa-lg icon w3-hover-opacity" href="http://linkedin.com/in/danachristo">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i style="color: #0B132B" class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                        </a>
+                        <a class="fa-stack fa-lg icon w3-hover-opacity" href="http://github.com/invaderlucky">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i style="color: #0B132B" class="fa fa-github fa-stack-1x fa-inverse"></i>
+                        </a>
+                        <a class="fa-stack fa-lg icon w3-hover-opacity" href="Dana_Christo_Resume_17.pdf">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i style="color: #0B132B" class="fa fa-file-text fa-stack-1x fa-inverse"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
+        <div class="w3-container">
+            <div class="w3-row-padding">
+                <div class="w3-col">
                     <h1 class="section-header">About</h1>
-                        <div class="col-sm-4">
+                        <div class="w3-third">
                             <img class="about-pic" src="images/bestfriends.png" alt="bestfriends">
                         </div>
-                        <div class="col-sm-8">
+                        <div class="w3-twothird">
                             <p style="text-align: left;">
                                 Hiya! I'm Dana. I do all the things. I'm a fifth year undergrad student at NC State University (graduating this December), majoring in computer science with a concentration in game developement. I love 
                                 coffee, playing and making video games, all things Disney, and a lot of other things that wouldn't fit if I listed them all. This past summer, I was a programming intern for 
@@ -127,11 +140,11 @@
 
     <!-- School Projects Section -->
     <section id="school" class="school-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
+            <div class="w3-container w3-light-gray">
+                <div class="w3-row-padding">
+                    <div class="w3-col">
                         <h1 class="section-header" style="text-align: center;">School Projects</h1>
-                        <div class="col-sm-6">
+                        <div class="w3-half col-sec-left">
                             <h2 class="sub-section-header">Games</h2>
                             <p>
                                 <a class="project-title" href="https://sites.google.com/ncsu.edu/csc482-unseen/" target="_blank">Unseen</a><br />
@@ -213,7 +226,7 @@
                             </p>
                         </div>
                         
-                        <div class="col-sm-6">
+                        <div class="w3-half col-sec-right">
                             <h2 class="sub-section-header">Apps/Other Assignments</h2>
                             <p>
                                 <a class="project-title" href="https://github.ncsu.edu/dbchris3/NutraNinjaApp" target="_blank">NutraNinja App</a><br />
@@ -247,11 +260,11 @@
 
     <!-- Projects Section -->
     <section id="projects" class="projects-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
+        <div class="w3-container">
+            <div class="w3-row-padding">
+                <div class="w3-col">
                     <h1 class="section-header" style="text-align: center;">Personal Projects</h1>
-                    <div class="col-sm-6">
+                    <div class="w3-half col-sec-left">
                         <h2 class="sub-section-header">Games</h2>
                         <p>
                             <a class="project-title" href="https://github.com/invaderlucky/CorgiPetter" target="_blank">Corgi Petter</a><br />
@@ -280,7 +293,7 @@
                         </p>
                     </div>
                     
-                    <div class="col-sm-6">
+                    <div class="w3-half col-sec-right">
                         <h2 class="sub-section-header">Apps</h2>
                         <p>
                             <a class="project-title" href="https://github.com/invaderlucky/invaderlucky.github.io" target="_blank">Personal Site</a><br />
@@ -317,6 +330,44 @@
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-gray">  
+        <div class="w3-xxlarge w3-padding-32">
+            <a class="fa-stack fa-lg w3-hover-opacity" href="mailto:dbchris3@ncsu.edu">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i style="color: #fff" class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+            </a>
+            <a class="fa-stack fa-lg w3-hover-opacity" href="http://twitter.com/invader_lucky">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i style="color: #fff" class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+            </a>
+            <a class="fa-stack fa-lg w3-hover-opacity" href="http://linkedin.com/in/danachristo">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i style="color: #fff" class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+            </a>
+            <a class="fa-stack fa-lg w3-hover-opacity" href="http://github.com/invaderlucky">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i style="color: #fff" class="fa fa-github fa-stack-1x fa-inverse"></i>
+            </a>
+            <a class="fa-stack fa-lg w3-hover-opacity" href="Dana_Christo_Resume_17.pdf">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i style="color: #fff" class="fa fa-file-text fa-stack-1x fa-inverse"></i>
+            </a>
+       </div>
+    </footer>
+      
+      <script>
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function myFunction() {
+          var x = document.getElementById("navDemo");
+          if (x.className.indexOf("w3-show") == -1) {
+              x.className += " w3-show";
+          } else { 
+              x.className = x.className.replace(" w3-show", "");
+          }
+      }
+      </script>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>

@@ -1,0 +1,204 @@
+﻿body {
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    font-family: "Source Sans Pro";
+    font-size: 125%;
+    color: #565656;
+}
+
+/* Video stuff for responsive iframes */
+
+.video-container {
+    width: 100%;
+    height: 360px;
+}
+
+.col-sec-left {
+    padding-left: 15%;
+    padding-right: 2%;
+}
+
+.col-sec-right {
+    padding-left: 2%;
+    padding-right: 15%;
+}
+
+/* Navigation Bar Stuff */
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        opacity: 0.85;
+        filter: alpha(opacity=85);
+        background: #000;
+        font-family: Montserrat;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .navbar li {
+        line-height: 40px;
+        height: 40px;
+        border:none;
+        font-size: 125%;
+    }
+
+    .navbar:hover {
+        opacity: 1.0;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+/* Individual Navigation Buttons */
+
+#home-btn:hover {
+    background-color: #0B132B;
+}
+
+#about-btn:hover {
+    background-color: #0B132B;
+}
+
+#school-btn:hover {
+    background-color: #0B132B;
+}
+
+#projects-btn:hover {
+    background-color: #0B132B;
+}
+
+/* Profile Picture */
+
+.pro {
+	width: 30%;
+    min-width: 200px;
+    max-width: 400px;
+	height: auto;
+	display: block;
+	margin: auto;
+}
+
+/* Social Icons Stuff */
+
+.table {
+	padding-right: 40px;
+}
+
+#social ul{ 
+    list-style: none;
+}
+
+#social li {
+    display: inline;
+    padding: 5px;
+    margin: auto;
+}
+
+.icon {
+    font-size: 150%;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+
+/* Intro Section Stuff */
+
+.header {
+	color: #01BAEF;
+	font-family: Montserrat;
+}
+
+.section-header {
+    color: #FF3B72;
+	font-family: Montserrat;
+    padding-bottom: 10px;
+}
+
+.sub-section-header {
+    color: #0B132B;
+	font-family: Montserrat;
+}
+
+.subtitle {
+    color: #01BAEF;
+}
+
+.intro-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background-image: url("stars.png");
+}
+
+/* About Section Stuff */
+
+.about-section {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+
+.about-pic {
+     width: 80%;
+     max-width: 350px;
+     padding-top: 2%;
+}
+
+/* School Section Stuff */
+
+.school-section {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: left;
+}
+
+.school-title {
+    color: #4DCCB0;
+    font-size: 150%;
+    font-family: Montserrat;
+    text-decoration: none;
+}
+
+.school-title:hover {
+    color: #227764;
+    text-decoration: none;
+}
+
+/* Projects Section Stuff */
+
+.projects-section {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: left;
+}
+
+.project-title {
+    color: #4DCCB0;
+    font-size: 150%;
+    font-family: Montserrat;
+    text-decoration: none;
+}
+
+.project-title:hover {
+    color: #227764;
+    text-decoration: none;
+}
